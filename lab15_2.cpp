@@ -10,10 +10,10 @@ void findLocalMax(const double [][N], bool [][N]);
 void showMatrix(const bool [][N]);
 
 int main(){
-	double A[N][N] = {1,0,1,0,1,8,1,3,10,2,1,4,1,2,1,1,0,4,0,1,0,7,2,3,1};
+	double A[N][N];
 	bool B[N][N]; 
 	cout << "Input the matrix.....\n";
-	//inputMatrix(A);
+	inputMatrix(A);
 	findLocalMax(A,B);
 	cout << "Result is \n";
 	showMatrix(B);
